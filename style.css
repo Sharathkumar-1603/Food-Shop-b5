@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap');
+
+
+:root {
+    --family-mukta-regular: "Mukta", sans-serif;
+    --family-poppins: "Poppins", sans-serif;
+    --color-orange: #FC6716;
+    --color-orange-1: #ff5900ba;
+}
+
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-nav .nav-item {
+    padding: 30px 0 30px 70px;
+    font-family: var(--family-mukta-regular);
+}
+
+
+.navbar .navbar-nav .nav-link {
+    color: var(--color-orange) ;  
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.navbar .navbar-nav .nav-link.active {
+    color: black ;
+}
+
+.navbar .navbar-nav .nav-link:hover {
+    color: black;
+}
+
+
+
+.navbar-nav button {
+    border: none;
+    outline: none;
+    margin-left: 30px;
+    background-color: transparent;
+    color: var(--color-orange);
+    font-size: 18px;
+    padding: 8px 16px;
+    border: 1px solid var(--color-orange);
+    transition: background-color 0.3s ease;
+}
+
+.navbar-nav button:hover {
+    background-color: var(--color-orange);
+    color: white;
+}
+
+
+.navbar-toggler {
+    border-color: var(--color-orange);
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=UTF8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(252, 103, 22, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+.modal-footer .btn{
+    color: var(--color-orange);
+}
+/* Responsive navbar for mobile */
+@media (max-width: 768px) {
+    .navbar-nav {
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+    .nav-item .btn{
+        text-align: center;
+        margin-right: 30px;
+    }
+
+    .navbar-nav .nav-item {
+        margin-bottom: 1rem;
+        padding: 0;
+        margin: 0;
+    }
+
+    .navbar-toggler {
+        margin-right: 1rem;
+    }
+}
+
+/*Photos*/
+
+.nav-tabs .nav-item a{
+    color: var(--color-orange) !important;
+    font-family: var(--family-mukta-regular);
+    font-size: 18px;
+}
+
+.p-1 .card img{
+    border: 1px solid var(--color-orange);
+    border-radius: 20px;
+}
+
+/*about*/
+
+#about-us h2{
+    font-family: var(--family-poppins);
+    color: var(--color-orange); 
+    font-weight: 700;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+#about-us p{
+    color: var(--color-orange-1);
+    font-size: 18px;
+    font-family: var(--family-poppins);
+}
+
+#about-us img{
+    border-radius: 20px;
+}
+
+/*meun*/
+ #menu h2{
+    font-family: var(--family-poppins);
+    color: var(--color-orange);
+    font-weight: 700;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+.text-center, h4{
+    color: var(--color-orange);
+}
+#menu p{
+    color: var(--color-orange-1);
+}
+
+/* Contact Section */
+#contact {
+
+    font-family: var(--family-mukta-regular); 
+}
+
+#contact h2 {
+    font-family: var(--family-poppins);
+    color: var(--color-orange); 
+    font-weight: 700;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+#contact .form-group {
+    margin-bottom: 15px;
+}
+
+#contact .form-group label {
+    color: var(--color-orange);
+    font-weight: 600;
+}
+
+#contact .form-control {
+    border: 2px solid var(--color-orange); 
+    border-radius: 6px;
+    padding: 10px;
+    transition: border-color 0.3s ease;
+}
+
+#contact .form-control:focus {
+    border-color: black; 
+    box-shadow: none;
+}
+
+#contact button.btn {
+    background-color: var(--color-orange);
+    color: white;
+    border: none;
+    border-radius: 30px;
+    padding: 10px 30px;
+    font-size: 16px;
+    transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+#contact button.btn:hover {
+    background-color: black; 
+    color: white;
+}
+
+
+#contact .col-md-6 h4 {
+    color: var(--color-orange);
+    font-weight: 600;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+#contact .col-md-6 p {
+    font-size: 18px;
+    color: #333;
+}
+
+#contact .col-md-6 p a {
+    color: var(--color-orange);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+#contact .col-md-6 p a:hover {
+    color: black;
+}
+
+
+/*Footer*/
+.footer {
+
+    padding: 40px 0; 
+    font-family: var(--family-poppins);
+}
+
+.footer h4 {
+    font-size: 18px;
+    color: var(--color-orange); 
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer ul li {
+    margin-bottom: 10px;
+}
+
+.footer ul li a {
+    color: var(--color-orange);
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-size: 14px;
+}
+
+
+.footer .social-links a {
+    margin-right: 10px;
+    font-size: 20px;
+    color: var(--color-orange-1);
+    transition: color 0.3s ease;
+}
+
+.footer .social-links a:hover {
+    color: var(--color-orange); 
+}
+
+.footer-col {
+    flex: 1;
+    margin-bottom: 30px;
+}
+
+
+.footer .container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+@media (max-width: 768px) {
+    .footer-col {
+        flex-basis: 100%; 
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .footer .social-links {
+        margin-top: 20px;
+    }
+}
+
+
+.copyright{
+    text-align: center;
+    color: var(--color-orange);
+    font-family: var(--family-mukta-regular);
+    font-size: 18px;
+}
